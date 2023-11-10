@@ -1,0 +1,9 @@
+version: '3.4'
+services:
+  EstaparApp:
+    image: minhaapp:latest
+    build:
+      context: .
+      dockerfile: DR.EstaparBackoffice.API/Dockerfile
+    ports:
+      - "8080:80"
